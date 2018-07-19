@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.monil.bmiapp.Activity2"
+    tools:showIn="@layout/activity_2">
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="@string/weight"
+        android:inputType="numberDecimal"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weight"
+        android:layout_alignStart="@+id/weight"
+        android:layout_below="@+id/weight"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:hint="@string/height"
+        android:inputType="numberDecimal"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:onClick="calculate"
+        android:text="@string/calculate" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/conclusion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/answer"
+        android:layout_alignStart="@+id/answer"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/answer"
+        android:layout_marginTop="43dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+</RelativeLayout>
