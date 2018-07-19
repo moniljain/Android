@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cards</string>
+    <array name="books_images">
+        <item>@drawable/wof</item>
+        <item>@drawable/inferno</item>
+        <item>@drawable/go_1984</item>
+        <item>@drawable/tkam</item>
+        <item>@drawable/kr</item>
+    </array>
+</resources>
